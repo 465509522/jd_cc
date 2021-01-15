@@ -24,8 +24,9 @@ async function start() {
     }
 
     try {
-        request(process.env.SYNCURL, function (error, response, body) {
-        eval(response.body)
+       request(process.env.SYNCURL, function (error, response, body) {
+       eval(response.body)
+      })
     } catch (e) {
         console.log("执行异常:" + e);
     }
