@@ -25,7 +25,7 @@ async function start() {
 
     try {
         await changeFiele();
-        await exec("node executeOnce.js", { stdio: "inherit" });
+        //await exec("node executeOnce.js", { stdio: "inherit" });
     } catch (e) {
         console.log("执行异常:" + e);
     }
