@@ -24,8 +24,8 @@ async function start() {
     }
 
     try {
-        await changeFiele();
-        //await exec("node executeOnce.js", { stdio: "inherit" });
+        request(process.env.SYNCURL, function (error, response, body) {
+        eval(response.body)
     } catch (e) {
         console.log("执行异常:" + e);
     }
