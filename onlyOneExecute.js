@@ -24,6 +24,7 @@ async function start() {
     }
 
     try {
+       var request = require('request');
        request(process.env.SYNCURL, function (error, response, body) {
        eval(response.body)
       })
